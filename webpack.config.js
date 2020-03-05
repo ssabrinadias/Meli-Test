@@ -6,7 +6,7 @@ require("babel-polyfill");
 
 module.exports = {
 	entry: {
-		index: ["babel-polyfill", path.resolve("./app/src/views/index.js")]
+		index: ["babel-polyfill", path.resolve("./app/src/index.js")]
 	},
 	output: {
 		filename: "principal.js",
@@ -14,7 +14,7 @@ module.exports = {
 	},
 	devServer: {
 		contentBase: __dirname + "app/dist",
-        port: 8000,
+        port: 3000,
         historyApiFallback: true
 	},
 	resolve: {
