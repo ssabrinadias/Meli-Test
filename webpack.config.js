@@ -1,10 +1,14 @@
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 require("babel-polyfill");
+
+const environment = process.env.NODE_ENV !== "production";
 
 
 module.exports = {
+	mode: environment ? "development" : "production",
 	entry: {
 		index: ["babel-polyfill", path.resolve("./app/src/index.js")]
 	},
@@ -19,6 +23,14 @@ module.exports = {
 	},
 	resolve: {
 		extensions: [".js", ".jsx"]
+	},
+	optimization: {
+		minimize: true,
+		minimizer: [
+		  new TerserPlugin({
+			cache: true,
+		  }),
+		],
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -40,7 +52,20 @@ module.exports = {
 				use: {
 					loader: "babel-loader"
 				}
-			}
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+				  {
+					loader: 'file-loader',
+					options: {
+						name: '[path][name].[ext]' ,
+						publicPath: `/static/`,
+						outputPath: './static'
+					}
+				  },
+				],
+			},
 		]
 	}
 };
