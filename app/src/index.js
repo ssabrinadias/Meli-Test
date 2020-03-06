@@ -1,14 +1,13 @@
 import React from "react";
 import App from "./_app"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";  
-import Layout from "./views/layout";  
-import Home  from "./views/home"
+import Home  from "./views/Home"
 
 const view = ()=> (
     <Router>
         <Switch>
             <Route path="/">
-                {Layout(<Home/>)}
+                <Home/>
             </Route>
         </Switch>
     </Router>
