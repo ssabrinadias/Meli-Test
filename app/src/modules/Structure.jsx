@@ -15,13 +15,11 @@ const StyleLayout = styled.section`
 
 const Layout = ({children, header}) =>(
     <StyleLayout>
-            <ThemeProvider theme={theme}>
-                <GlobalStyles />
-                <Header/>
-                <Content>
-                        {children}
-                </Content>
-            </ThemeProvider>
+        <ThemeProvider theme={theme}>
+            <GlobalStyles />
+            <Header/>
+            {children}
+        </ThemeProvider>
     </StyleLayout>
 )
 
