@@ -1,11 +1,8 @@
 import React from 'react';
-import Structure from "./Structure"
 import styled from 'styled-components'
+import Structure from "../modules/Structure"
+import Content from "../components/Content"
 
-
-const Content = styled.div`
-  background: red
-`
 
 const Home = () =>  {  
   return (
