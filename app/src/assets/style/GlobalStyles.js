@@ -1,9 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from 'styled-tools'
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    font-family: ${theme('font.family')};
   }
   * {
     outline: none;
@@ -14,5 +17,16 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
- 
+  ul {
+    padding-left: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0;
+  }
 `;
