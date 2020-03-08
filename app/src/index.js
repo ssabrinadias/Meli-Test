@@ -13,6 +13,9 @@ const view = ()=> (
             <Route exact path="/items">
                 <Catalog/>
             </Route>
+            <Route exact path="/items/:id">
+                <div>ola!</div>
+            </Route>
         </Switch>
     </Router>
 )

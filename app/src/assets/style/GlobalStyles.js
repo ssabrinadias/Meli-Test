@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-size: 18px;
     font-family: ${theme('font.family')};
+    height: 100%;
   }
   * {
     outline: none;
@@ -28,5 +29,8 @@ export const GlobalStyles = createGlobalStyle`
   p {
     padding: 0;
     margin: 0;
+  }
+  #root {
+    height: 100%;
   }
 `;

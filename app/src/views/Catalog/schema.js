@@ -4,20 +4,23 @@ const GET_CATALOG = gql`
   query Catalog($q: String!){
       catalog(q: $q) {
         autor{
-        name,
-        lastname
+            name,
+            lastname
         },
         items {
-        id,
-        title,   
-        price {
-            amount,
-            decimals,
-            currency
-        },
-        picture,
-        condition,
-        free_shipping
+            id,
+            title,   
+            price {
+                amount,
+                decimals,
+                currency
+            },
+            picture,
+            condition,
+            free_shipping,
+            state {
+                name
+            }
         },
         categories
       }
