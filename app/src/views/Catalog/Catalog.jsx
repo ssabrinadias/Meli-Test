@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import { theme } from 'styled-tools'
-import Structure from "../modules/Structure"
-import Content from "../components/Content"
+import Structure from "../../modules/Structure"
+import Content from "../../components/Content"
 
 const Li =  styled.li `
     background: #FFF;
@@ -49,8 +49,9 @@ const Background = styled.div`
     background: ${theme('colors.light.main')};
 `
 
-const Catalog = () =>  {  
-  return (
+const Catalog = ({queryParams, data}) =>  {  
+    console.log(data)
+    return (
     <Structure header >
         <Background>
             <Content>

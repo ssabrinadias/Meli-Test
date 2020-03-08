@@ -7,10 +7,10 @@ import Catalog  from "./views/Catalog"
 const view = ()=> (
     <Router>
         <Switch>
-            <Route exactly path="/dddd">
+            <Route exact path="/">
                 <Home/>
             </Route>
-            <Route path="/items">
+            <Route exact path="/items">
                 <Catalog/>
             </Route>
         </Switch>

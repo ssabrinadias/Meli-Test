@@ -6,7 +6,7 @@ import Content from "../../components/Content"
 import LogoImage from "../../assets/images/Logo_ML_2x.png"
 
 
-const HeaderContent = styled.head`
+const HeaderContent = styled.header`
     display: flex;
     justify-content: center;
     padding: 5px 0;
