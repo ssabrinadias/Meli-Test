@@ -50,7 +50,6 @@ const Background = styled.div`
 `
 
 const Catalog = ({queryParams, data}) =>  {  
-    console.log(data)
     return (
     <Structure header >
         <Background>
