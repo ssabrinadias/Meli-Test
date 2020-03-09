@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import Theme from "../assets/style/theme"
 import { theme } from 'styled-tools'
 import Header from "./Header"
+import Breadcrumbs from "./Breadcrumbs"
 
 
 const StyleLayout = styled.section`
@@ -15,11 +16,12 @@ const StyleLayout = styled.section`
     background: ${theme('colors.light.main')};
 `
 
-const Layout = ({children}) =>(
+const Layout = ({children, breadcrumb, header}) =>(
     <ThemeProvider theme={Theme}>
         <GlobalStyles />
         <StyleLayout>
-            <Header/>
+        {header && <Header/>}
+            <Breadcrumbs categories={breadcrumb}/>
             {children}
         </StyleLayout>
     </ThemeProvider>
