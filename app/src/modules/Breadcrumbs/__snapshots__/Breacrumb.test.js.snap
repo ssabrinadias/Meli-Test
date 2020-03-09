@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb component [snapshot] - should be able to render  1`] = `
+<div>
+  <div
+    class="sc-AxjAm dcPICV"
+  >
+    <ul
+      class="sc-AxirZ cpJVtN"
+    />
+  </div>
+</div>
+`;

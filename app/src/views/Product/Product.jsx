@@ -4,7 +4,7 @@ import { theme } from 'styled-tools'
 import Language from "../../components/language" // check location consistency for dynamic return
 import Structure from "../../modules/Structure"
 import Content from "../../components/Content"
-import Button from "../../components/button"
+import Button from "../../components/Button"
 
 
 const BoxDetail =  styled.div`
