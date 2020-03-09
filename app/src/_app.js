@@ -29,9 +29,9 @@ const client = new ApolloClient({
 });
 
 export default Content =>
-    ReactDOM.render(
-        <ApolloProvider client={client}>
-            <Content />
-        </ApolloProvider>,
-        document.getElementById("root")
-    );
+	ReactDOM.render(
+		<ApolloProvider client={client}>
+			<Content />
+		</ApolloProvider>,
+		document.getElementById("root")
+	);
