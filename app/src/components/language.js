@@ -1,6 +1,7 @@
 export default {
     ARS:{
         new: "Nuevo",
+        used: "Usado",
         sold: "vendidos",
         description: "Descripción del producto",
         placeholder :{
@@ -9,5 +10,9 @@ export default {
         button: {
             buy: "Comprar"
         }
+    },  
+    currency: {
+        ARS: "$"
     }
+
 }

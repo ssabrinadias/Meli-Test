@@ -26,6 +26,7 @@ const Image = styled.div`
     flex-basis: 60%;
     max-width: 680px;
     padding-right: 16px;
+    padding-top: 32px;
     img {
         display: block;
         margin: auto;
@@ -83,9 +84,9 @@ const ProductView = ({data}) =>  {
                     <img src={product.picture} alt={product.title}/>
                 </Image>
                 <Detail>
-                    <span>{product.condition} - {product.sold_quantity} {Language.ARS.sold}</span>
+                    <span>{product.condition || Language.ARS.used} - {product.sold_quantity} {Language.ARS.sold}</span>
                     <h1>{product.title}</h1>
-                    <Price><span>$ {(product.price||{}).amount}</span></Price>
+                    <Price><span>{Language.currency.ARS} {(product.price||{}).amount}</span></Price>
                     <Button 
                         onClick={()=>{}}
                         primary
