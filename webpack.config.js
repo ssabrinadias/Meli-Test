@@ -14,7 +14,8 @@ module.exports = {
 	},
 	output: {
 		filename: "principal.js",
-		path: __dirname + "app/dist"
+		path: __dirname + "app/dist",
+		publicPath: "/"
 	},
 	devServer: {
 		contentBase: __dirname + "app/dist",

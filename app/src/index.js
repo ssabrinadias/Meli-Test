@@ -3,6 +3,7 @@ import App from "./_app"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";  
 import Home  from "./views/Home"
 import Catalog  from "./views/Catalog"
+import Product  from "./views/Product"
 
 const view = ()=> (
     <Router>
@@ -14,7 +15,7 @@ const view = ()=> (
                 <Catalog/>
             </Route>
             <Route exact path="/items/:id">
-                <div>ola!</div>
+                <Product/>
             </Route>
         </Switch>
     </Router>

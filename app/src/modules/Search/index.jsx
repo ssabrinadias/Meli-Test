@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from 'styled-components'
+import Language from "../../components/language" 
 
 
 const Content = styled.div`
@@ -36,7 +37,7 @@ const Search = () => {
             <Input
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                placeholder="Nunca dejes de buscar"
+                placeholder={Language.ARS.placeholder.Search}
                 type="text"
                 name="search"
                 required
