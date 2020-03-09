@@ -20,6 +20,12 @@ export default {
     },
     font : {
         family:'Arial, Helvetica, sans-serif'
+    },
+    buttons: {
+        primary: {
+            color: "#3483FA", 
+            mainText: "#FFF"
+        }
     }
 }
   
