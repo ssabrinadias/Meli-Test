@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from 'styled-components'
 import { theme } from 'styled-tools'
+import {Link} from "react-router-dom";  
 import Search from "../Search"
 import Content from "../../components/Content"
 import LogoImage from "../../assets/images/Logo_ML_2x.png"
@@ -12,7 +13,7 @@ const HeaderContent = styled.header`
     padding: 5px 0;
     background: ${theme('colors.primary.main')};
 `
-const Logo = styled.div`
+const Logo = styled(Link)`
     display: flex; 
     align-items: center;
     width: 50px;
@@ -33,7 +34,7 @@ const Header = () =>(
     <HeaderContent>
         <Content >
             <Box>
-                <Logo>
+                <Logo to={`/`}>
                     <img src={LogoImage} alt="Logo Meli"/>
                 </Logo>
                 <Search/>

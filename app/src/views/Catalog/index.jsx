@@ -17,6 +17,7 @@ const Catalog = () => {
     return <CatalogView 
         queryParams={search}
         data={data}
+        error={error}
     />
 }
 
