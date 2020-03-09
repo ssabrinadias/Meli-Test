@@ -16,7 +16,7 @@ const GET_ITEM = gql`
                 price{
                     currency,
                     amount,
-                    decimals
+                    decimal
                 },
                 picture,
                 condition,

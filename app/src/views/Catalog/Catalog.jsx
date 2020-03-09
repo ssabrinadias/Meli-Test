@@ -20,7 +20,6 @@ const NotFound = styled.div`
     margin-bottom: 32px;
 `
 
-
 const CatalogView = ({data, error}) =>  {  
     const items = data && (data.catalog||{}).items
     return (

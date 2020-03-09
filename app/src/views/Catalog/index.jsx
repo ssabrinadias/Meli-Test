@@ -11,7 +11,7 @@ const getQueryParams = () => {
 const Catalog = () => {
     const queryParams = getQueryParams()
     const search = queryParams.get('search')
-    const { loading, error, data } = useQuery(GET_CATALOG, {
+    const { error, data } = useQuery(GET_CATALOG, {
       variables: { q: search },
     });
     return <CatalogView 

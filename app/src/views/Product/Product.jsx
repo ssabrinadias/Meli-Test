@@ -33,9 +33,17 @@ const Image = styled.div`
     }
 `
 const Price = styled.div`
+    display: flex;
     margin: 32px 0;
     font-size: 2.5em;
 `
+const Decimal = styled.div`
+    position: relative;
+    top: 6px;
+    left: 3px;
+    font-size: 0.5em;
+`
+
 const Description = styled.div`
     padding: 32px 0 32px 32px;
     background: #FFF;
@@ -48,6 +56,7 @@ const Description = styled.div`
         color: ${theme('colors.tertiary.main')};
     }
 `
+
 const disruptResult = ({
     productDescription,
     product,
@@ -86,7 +95,10 @@ const ProductView = ({data}) =>  {
                 <Detail>
                     <span>{product.condition || Language.ARS.used} - {product.sold_quantity} {Language.ARS.sold}</span>
                     <h1>{product.title}</h1>
-                    <Price><span>{Language.currency.ARS} {(product.price||{}).amount}</span></Price>
+                    <Price>
+                        <span>{Language.currency.ARS} {(product.price||{}).amount}</span>
+                        <Decimal>{(product.price||{}).decimal}</Decimal>
+                    </Price>
                     <Button 
                         onClick={()=>{}}
                         primary

@@ -12,7 +12,7 @@ const GET_CATALOG = gql`
             title,   
             price {
                 amount,
-                decimals,
+                decimal,
                 currency
             },
             picture,
