@@ -14,11 +14,11 @@ module.exports = {
 	},
 	output: {
 		filename: "principal.js",
-		path: __dirname + "app/dist",
+		path: __dirname + "/app/dist",
 		publicPath: "/"
 	},
 	devServer: {
-		contentBase: __dirname + "app/dist",
+		contentBase: __dirname + "/app/dist",
         port: 3000,
         historyApiFallback: true
 	},

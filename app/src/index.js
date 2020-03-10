@@ -5,20 +5,14 @@ import Home from "./views/Home";
 import Catalog from "./views/Catalog";
 import Product from "./views/Product";
 
-const view = () => (
-	<Router>
+const view = () => {
+	return <Router>
 		<Switch>
-			<Route exact path="/">
-				<Home />
-			</Route>
-			<Route exact path="/items">
-				<Catalog />
-			</Route>
-			<Route exact path="/items/:id">
-				<Product />
-			</Route>
+			<Route exact path="/" component={Home}/>
+			<Route exact path="/items" component={Catalog}/>
+			<Route exact path="/items/:id" component={Product}/>
 		</Switch>
 	</Router>
-);
+}
 
 App(view);

@@ -8,6 +8,8 @@
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+		"start:prod": "node app/www.js",
     "precommit": "lint-staged",
     "format": "prettier --write **/*.{js,json,css}"
   },
