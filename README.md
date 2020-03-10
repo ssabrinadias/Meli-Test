@@ -7,6 +7,7 @@
 - GraphQL
 - Apollo 
 - Jest
+- Styled Components
 
 ### Requeridos
 
