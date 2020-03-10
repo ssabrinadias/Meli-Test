@@ -17,7 +17,7 @@
 
 Projeto estruturado e configurado manualmente, não foi utilizado estruturas iniciais como CRP, tendo suas dependencias sendo atribuidas de acordo com a necessidade da estrutura.
 
-A tecnologia usada para o server foi GraphQL conectada ao cliente pelo Apollo
+A tecnologia usada para requisição de dados foi o  Apollo para conexão ao GraphQL
 
 ## INICIANDO O PROJETO
 Instalação
