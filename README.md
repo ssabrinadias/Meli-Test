@@ -31,7 +31,7 @@ Ambiente de desenvolvimento
 ```bash
 yarn start
 Running on port http://localhost:3000
-
+```
 
 AMBIENTE DE PRODUÇÃO
 
