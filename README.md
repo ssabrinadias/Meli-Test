@@ -26,14 +26,14 @@ Instalação
 yarn install
 ```
 
-Ambiente de desenvolvimento
+### Ambiente de desenvolvimento
 
 ```bash
 yarn start
 Running on port http://localhost:3000
 ```
 
-AMBIENTE DE PRODUÇÃO
+### Ambiente de Produção
 
 'Buildando' o Projeto
 
@@ -41,10 +41,21 @@ AMBIENTE DE PRODUÇÃO
 yarn run build
 ```
 
-Start o Projeto
+### 'Startando' o Projeto
 
 ```bash
 yarn run start:prod
 Running on port http://localhost:3000
 ```
 
+### Rodando os testes
+
+```bash
+yarn test
+```
+
+### Formatando o codigo
+
+```bash
+yarn run  format
+```
