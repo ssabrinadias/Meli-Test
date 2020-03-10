@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product detail request [snapshot] - should be able to rende 1`] = `
+<section
+  class="sc-fzozJi fKZeCJ"
+>
+  <header
+    class="sc-AxgMl fMGNCq"
+  >
+    <div
+      class="sc-AxhUy eqTxEv"
+    >
+      <div
+        class="sc-Axmtr hIHYcU"
+      >
+        <a
+          class="sc-AxheI gyZAte"
+          href="/"
+        >
+          <img
+            alt="Logo Meli"
+            src="[object Object]"
+          />
+        </a>
+        <form
+          class="sc-AxirZ hvoVdz"
+        >
+          <input
+            class="sc-AxiKw iculOt"
+            name="search"
+            placeholder="Nunca dejes de Buscar"
+            required=""
+            type="text"
+            value=""
+          />
+          <button
+            class="sc-AxhCb gisRIW"
+            type="submit"
+          />
+        </form>
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-AxhUy eqTxEv"
+  >
+    <ul
+      class="sc-AxmLO htcQYS"
+    />
+  </div>
+  <div
+    class="sc-AxhUy eqTxEv"
+  >
+    <div
+      class="sc-fzpans kdeZNy"
+    >
+      <div
+        class="sc-fznyAO jGTaFR"
+      >
+        <img />
+      </div>
+      <div
+        class="sc-fzplWN cbmssi"
+      >
+        <span>
+          Usado
+           - 
+           
+          vendidos
+        </span>
+        <h1 />
+        <div
+          class="sc-fznKkj fFMFHD"
+        >
+          <span>
+            $
+             
+          </span>
+          <div
+            class="sc-fznZeY fbjwAo"
+          />
+        </div>
+        <button
+          class="sc-fzoLsD iufAH"
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-fzokOt hUKtpy"
+    >
+      <h2>
+        Descripción del producto
+      </h2>
+      <p />
+    </div>
+  </div>
+</section>
+`;

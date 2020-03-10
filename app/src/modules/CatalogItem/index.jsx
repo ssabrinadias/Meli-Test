@@ -43,7 +43,7 @@ const FreeShipping = styled.div`
     margin-left: 10px;
 `
 
-const CatalogItem = ({item:{id, title, picture, state, free_shipping, price:{amount}}})=> (
+const CatalogItem = ({item:{id, title, picture, state, free_shipping, price:{amount}}}) => (
     <LinkStyled to={`/items/${id}`}>
         <Image>
             <img src={picture} alt={title}/>    

@@ -13,7 +13,7 @@ const HeaderContent = styled.header`
     padding: 5px 0;
     background: ${theme('colors.primary.main')};
 `
-const Logo = styled(Link)`
+const Logo = styled.a`
     display: flex; 
     align-items: center;
     width: 50px;
@@ -34,7 +34,7 @@ const Header = () =>(
     <HeaderContent>
         <Content >
             <Box>
-                <Logo to={`/`}>
+                <Logo href="/">
                     <img src={LogoImage} alt="Logo Meli"/>
                 </Logo>
                 <Search/>

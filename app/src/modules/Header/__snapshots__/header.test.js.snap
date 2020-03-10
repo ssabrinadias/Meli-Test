@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component [snapshot] - should be able to render  1`] = `
+<div>
+  <header
+    class="sc-AxgMl isISaG"
+  >
+    <div
+      class="sc-AxhUy eqTxEv"
+    >
+      <div
+        class="sc-Axmtr hIHYcU"
+      >
+        <a
+          class="sc-AxheI gyZAte"
+          href="/"
+        >
+          <img
+            alt="Logo Meli"
+            src="[object Object]"
+          />
+        </a>
+        <form
+          class="sc-AxirZ hvoVdz"
+        >
+          <input
+            class="sc-AxiKw iculOt"
+            name="search"
+            placeholder="Nunca dejes de Buscar"
+            required=""
+            type="text"
+            value=""
+          />
+          <button
+            class="sc-AxhCb kBUfZc"
+            type="submit"
+          />
+        </form>
+      </div>
+    </div>
+  </header>
+</div>
+`;
