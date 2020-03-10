@@ -6,13 +6,15 @@ import Catalog from "./views/Catalog";
 import Product from "./views/Product";
 
 const view = () => {
-	return <Router>
-		<Switch>
-			<Route exact path="/" component={Home}/>
-			<Route exact path="/items" component={Catalog}/>
-			<Route exact path="/items/:id" component={Product}/>
-		</Switch>
-	</Router>
-}
+	return (
+		<Router>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/items" component={Catalog} />
+				<Route exact path="/items/:id" component={Product} />
+			</Switch>
+		</Router>
+	);
+};
 
 App(view);

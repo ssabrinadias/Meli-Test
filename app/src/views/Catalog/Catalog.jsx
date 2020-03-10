@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import { Helmet } from 'react-helmet'
 import Structure from "../../modules/Structure"
 import Content from "../../components/Content"
 import Item from "../../modules/CatalogItem"
@@ -20,13 +21,16 @@ const NotFound = styled.div`
     margin-bottom: 32px;
 `
 
-const CatalogView = ({data, error}) =>  {  
+const CatalogView = ({data, queryParams}) =>  {  
     const items = data && (data.catalog||{}).items
     return (
     <Structure
         header
         breadcrumb ={data && (data.catalog||{}).categories}
     >
+        <Helmet>
+            <title>{queryParams} Mercado Libre</title>
+        </Helmet>
         <Content>
             {items ? 
                 <Ul>

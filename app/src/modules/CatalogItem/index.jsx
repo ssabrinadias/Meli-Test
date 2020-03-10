@@ -50,7 +50,7 @@ const CatalogItem = ({item:{id, title, picture, state, free_shipping, price:{amo
         </Image>
         <Infos>
             <Price>
-                {Language.currency.ARS} {amount}
+                {Language.currency.ARS} {amount && amount.toFixed(3)}
                 {free_shipping && <FreeShipping>
                     <img src={IconFreeShipping} alt="free shipping"/>
                 </FreeShipping>}

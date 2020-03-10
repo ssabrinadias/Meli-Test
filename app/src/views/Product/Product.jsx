@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { theme } from 'styled-tools'
+import { Helmet } from 'react-helmet'
 import Language from "../../components/language" // check location consistency for dynamic return
 import Structure from "../../modules/Structure"
 import Content from "../../components/Content"
@@ -85,19 +86,35 @@ const disruptResult = ({
 
 const ProductView = ({data}) =>  { 
     const product = data ? disruptResult(data) : {}
+    const amount = (product.price||{}).amount
+    const decimal = (product.price||{}).decimal
+    const title = product.title || ""
+    const description = (product.productDescription||{}).description || ""
+ 
+    const decimalDisplay = (decimal)=> {
+        const decimalLength = String(decimal).length
+        if (decimalLength <=1 ) return `${decimal}0`
+        return Decimal
+    }
+    
     return (
     <Structure header >
+        <Helmet>
+            <title>{title} Mercado Libre</title>
+            <meta name="description" content={description} />
+        </Helmet>
+
         <Content>
             <BoxDetail>
                 <Image>
-                    <img src={product.picture} alt={product.title}/>
+                    <img src={product.picture} alt={title}/>
                 </Image>
                 <Detail>
                     <span>{product.condition || Language.ARS.used} - {product.sold_quantity} {Language.ARS.sold}</span>
-                    <h1>{product.title}</h1>
+                    <h1>{title}</h1>
                     <Price>
-                        <span>{Language.currency.ARS} {(product.price||{}).amount}</span>
-                        <Decimal>{(product.price||{}).decimal}</Decimal>
+                        <span>{Language.currency.ARS} {amount && amount.toFixed(3)}</span>
+                        <Decimal>{(decimal===0 || decimal) && decimalDisplay(decimal)}</Decimal>
                     </Price>
                     <Button 
                         onClick={()=>{}}
@@ -112,7 +129,7 @@ const ProductView = ({data}) =>  {
                 <h2>
                     {Language.ARS.description}
                 </h2>
-                <p>{(product.productDescription||{}).description}</p>
+                <p>{description}</p>
             </Description>
         </Content>
     </Structure>

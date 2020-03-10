@@ -1,6 +1,6 @@
 import React from 'react';
 import Structure from "../../modules/Structure"
-import styled from 'styled-components';
+import { Helmet } from 'react-helmet'
 
 
 const Home = () =>  {  
@@ -8,6 +8,9 @@ const Home = () =>  {
     <Structure
       header
     >
+      <Helmet>
+        <title>Mercado Libre</title>>
+      </Helmet>
     </Structure>
   );
 }
